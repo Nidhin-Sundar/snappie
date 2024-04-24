@@ -68,14 +68,14 @@ const LoginPage = () => {
   <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
     <form className="space-y-6" onSubmit={handleSubmit}  method="POST">
       <div>
-        <label for="email" className="block text-sm font-medium leading-6 text-white">Email address</label>
+        <label htmlFor="email" className="block text-sm font-medium leading-6 text-white">Email address</label>
         <div className="mt-2">
           <input
            id="email" 
           name="email" 
           type="email" 
           value={email}  
-          autocomplete="email" 
+          autoComplete="email" 
           onChange={(e) => setEmail(e.target.value)}
 
            required
@@ -85,7 +85,7 @@ const LoginPage = () => {
 
       <div>
         <div className="flex items-center justify-between">
-          <label for="password" className="block text-sm font-medium leading-6 text-white">Password</label>
+          <label htmlFor="password" className="block text-sm font-medium leading-6 text-white">Password</label>
           <div className="text-sm">
             <a href="#" className="font-semibold text-green-600 hover:text-green-500">Forgot password?</a>
           </div>
@@ -97,7 +97,7 @@ const LoginPage = () => {
             type="password" 
             value={password}  
 
-            autocomplete="current-password" 
+            autoComplete="current-password" 
             onChange={(e) => setPassword(e.target.value)}
 
             required 
